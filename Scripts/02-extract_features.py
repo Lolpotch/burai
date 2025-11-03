@@ -2,8 +2,8 @@ import pandas as pd
 import numpy as np
 
 # ===== Konfigurasi =====
-INPUT_FILE = r"C:\Users\Fiyan\OneDrive\Dokumen\TUGAS KAMPUS\algoritma\OOP\ML\dataprosos\CICIDS_Balanced_Cleaned.csv"
-OUTPUT_FILE = r"C:\Users\Fiyan\OneDrive\Dokumen\TUGAS KAMPUS\algoritma\OOP\ML\New\DataProsNew\features_extracted.csv"
+INPUT_FILE = r"YOUR_PATH_TO_SPLIT_CSV_FILE"
+OUTPUT_FILE = r"EXTRACTED_FEATURES_CSV_FILE_OUTPUT_LOCATION"
 
 FEATURES = [
     "destination port",

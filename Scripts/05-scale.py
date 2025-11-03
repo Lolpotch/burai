@@ -3,9 +3,9 @@ from sklearn.preprocessing import StandardScaler
 import joblib
 
 # ===== Konfigurasi =====
-INPUT_FILE = r"C:\Users\Fiyan\OneDrive\Dokumen\TUGAS KAMPUS\algoritma\OOP\ML\New\DataProsNew\features_extracted.csv"
-OUTPUT_FILE = r"C:\Users\Fiyan\OneDrive\Dokumen\TUGAS KAMPUS\algoritma\OOP\ML\New\DataProsNew\scaled_features.csv"
-SCALER_FILE = r"C:\Users\Fiyan\OneDrive\Dokumen\TUGAS KAMPUS\algoritma\OOP\ML\New\DataProsNew\scaler_7features.pkl"
+INPUT_FILE = r"YOUR_PATH_TO_CLEANED_CSV_FILE"
+OUTPUT_FILE = r"SCALED_CSV_FILE_OUTPUT_LOCATION"
+SCALER_FILE = r"YOUR_PATH\scaler_7features.pkl"
 
 # ========================
 print("[INFO] Membaca data fitur...")

@@ -2,8 +2,8 @@
 import pandas as pd
 from sklearn.utils import resample
 
-INPUT_FILE = r"data/features_extracted.csv"
-OUTPUT_FILE = r"data/features_balanced.csv"
+INPUT_FILE = r"YOUR_PATH_TO_EXTRACTED_FEATURES_CSV_FILE"
+OUTPUT_FILE = r"BALANCED_CSV_FILE_OUTPUT_LOCATION"
 RANDOM_STATE = 42
 
 print("[INFO] Membaca data fitur...")
