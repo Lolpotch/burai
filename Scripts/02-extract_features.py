@@ -2,8 +2,8 @@ import pandas as pd
 import numpy as np
 
 # ===== Konfigurasi =====
-INPUT_FILE = r"YOUR_PATH_TO_SPLIT_CSV_FILE"
-OUTPUT_FILE = r"EXTRACTED_FEATURES_CSV_FILE_OUTPUT_LOCATION"
+INPUT_FILE = r"YOUR_PATH\split-dataset.csv"
+OUTPUT_FILE = r"YOUR_PATH\extracted-features-dataset.csv"
 
 FEATURES = [
     "destination port",

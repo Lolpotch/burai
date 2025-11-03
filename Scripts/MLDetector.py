@@ -10,10 +10,10 @@ import shutil
 
 # ============ KONFIGURASI ============
 UFW_BIN = shutil.which("ufw") or "/usr/sbin/ufw"   
-MODEL_PATH = "/home/pros/model/rf_model_7features.pkl"
-SCALER_PATH = "/home/pros/model/scaler_7features.pkl"
-CACHE_CSV = "/home/pros/dataML/features_ML_fuel.csv"
-LOG_FILE = "/home/pros/dataML/log/ml_detector.log"
+MODEL_PATH = "YOUR_PATH/rf_model.pkl"
+SCALER_PATH = "YOUR_PATH/scaler.pkl"
+CACHE_CSV = "YOUR_PATH/features_ML_fuel.csv"
+LOG_FILE = "YOUR_PATH/log/ml_detector.log"
 
 BOT_TOKEN = "YOUR_BOT_TOKEN_HERE" # EXAMPLE : "123456789:avaDSAFVSbiukjBIbCHAjil"
 CHAT_ID = "CHAT_ID_HERE" # EXAMPLE: "126548932"

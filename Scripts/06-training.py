@@ -5,8 +5,8 @@ from sklearn.metrics import classification_report, confusion_matrix
 import joblib
 
 # ===== Konfigurasi =====
-INPUT_FILE = r"C:\Users\Fiyan\OneDrive\Dokumen\TUGAS KAMPUS\algoritma\OOP\ML\New\DataProsNew\scaled_features.csv"
-MODEL_FILE = r"C:\Users\Fiyan\OneDrive\Dokumen\TUGAS KAMPUS\algoritma\OOP\ML\New\Model\rf_model_7features.pkl"
+INPUT_FILE = r"YOUR_PATH\scaled-dataset.csv"
+MODEL_FILE = r"YOUR_PATH\rf_model.pkl"
 
 # ========================
 print("[INFO] Membaca data siap training...")

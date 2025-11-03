@@ -2,8 +2,8 @@ import pandas as pd
 import numpy as np
 
 # Path ke file input & output
-input_path = r"YOUR_PATH_TO_BALANCED_CSV_FILE"
-output_path = r"CLEANED_CSV_FILE_OUTPUT_LOCATION"
+input_path = r"YOUR_PATH\balanced-dataset.csv"
+output_path = r"YOUR_PATH\cleaned-dataset.csv"
 
 # 1️⃣ Baca file CSV
 print("Membaca dataset...")

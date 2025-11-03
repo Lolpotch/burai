@@ -16,7 +16,7 @@ else:
     merged_df = pd.concat(df_list, ignore_index=True)
 
     # Simpan hasil gabungan
-    output_path = r"YOUR_PATH_TO_OUTPUT_FILE"
+    output_path = r"YOUR_PATH\merged-dataset.csv"
     merged_df.to_csv(output_path, index=False)
 
     print("Jumlah total data:", merged_df.shape)

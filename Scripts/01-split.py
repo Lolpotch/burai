@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load dataset hasil filter sebelumnya
-data_path = r"YOUR_PATH_TO_MERGED_CSV_FILE"
+data_path = r"YOUR_PATH\merged-dataset.csv"
 df = pd.read_csv(data_path)
 
 
@@ -17,7 +17,7 @@ print("Jumlah data serangan SSH-Patator:", len(df_attack))
 print(df_attack['label'].value_counts())
 
 # Simpan ke file baru
-output_path = r"YOUR_PATH_TO_OUTPUT_FILE"
+output_path = r"YOUR_PATH\split-dataset.csv"
 df_attack.to_csv(output_path, index=False)
 
 print("Dataset tersimpan di:", output_path)
