@@ -15,8 +15,8 @@ SCALER_PATH = "/home/pros/model/scaler_7features.pkl"
 CACHE_CSV = "/home/pros/dataML/features_ML_fuel.csv"
 LOG_FILE = "/home/pros/dataML/log/ml_detector.log"
 
-BOT_TOKEN = "8094758052:AAHAIicEPxFJJnh80HnXFb_DlNwD8tU9Blc"
-CHAT_ID = "-4867146169"
+BOT_TOKEN = "YOUR_BOT_TOKEN_HERE" # EXAMPLE : "123456789:avaDSAFVSbiukjBIbCHAjil"
+CHAT_ID = "CHAT_ID_HERE" # EXAMPLE: "126548932"
 
 BAN_DURATION = 5          # detik
 CHECK_INTERVAL = 1        # detik
