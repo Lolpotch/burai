@@ -1,0 +1,10 @@
+[Unit]
+Description=Run Fail2Ban summary script every 5 minutes
+
+[Timer]
+OnBootSec=2min         # tunggu 2 menit setelah boot
+OnUnitActiveSec=5min   # ulang tiap 5 menit
+Unit=fail2ban-summary.service
+
+[Install]
+WantedBy=timers.target

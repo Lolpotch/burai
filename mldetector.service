@@ -1,0 +1,18 @@
+[Unit]
+Description=ML Detector - deteksi SSH brute-force & auto-ban
+After=network.target pcapworker.service
+Wants=pcapworker.service
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=YOUR_PATH
+ExecStart=YOUR_PATH/venv/bin/python YOUR_PATH/MLDetector.py
+Environment="PATH=YOUR_PATH/venv/bin:/usr/bin:/bin"
+Restart=on-failure
+RestartSec=5s
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
