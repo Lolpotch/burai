@@ -75,7 +75,6 @@ bantime  = 5
 findtime = 600
 ignoreip = 127.0.0.1 ::1 192.168.67.14 192.168.67.1 
 action   = iptables-multiport[name=sshd, port="ssh", protocol="tcp"]
-           epoch-log[name=sshd]
            telegram[name=sshd]
 ```
 
