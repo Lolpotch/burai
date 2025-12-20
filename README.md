@@ -1,5 +1,5 @@
 # HOW TO SETUP
-Create 4 Virtual Machines (VM) VirtualBox:
+Create 4 Virtual Machines (VM) VirtualBox (Attacker, Fail2Ban, Machine Learning, Monitoring):
 - OS Debian 12.7.0
 - Guided - use entire disk
 - All Files in one partition
