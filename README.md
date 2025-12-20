@@ -1,4 +1,4 @@
-HOW TO SETUP
+# HOW TO SETUP
 Create 4 Virtual Machines (VM) VirtualBox:
 - OS Debian 12.7.0
 - Guided - use entire disk
@@ -106,4 +106,27 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install -y python3 python3-pip tcpdump ufw buildessential python3-dev libpcap-dev git
 pip install numpy scikit-learn==1.7.1 joblib pandas requests scapy
 ```
+
+- Put mldetector.service and pcapworker.service as service in Systemd
+<br>note that you have to edit lines in the service files such as below:
+```bash
+#pcapworker.service
+User=pros
+Group=pros
+WorkingDirectory=YOUR_PATH
+ExecStart=YOUR_PATH/venv/bin/python YOUR_PATH/PCAPWorker.py
+
+# mldetector.service
+ExecStart=YOUR_PATH/venv/bin/python YOUR_PATH/MLDetector.py
+Environment="PATH=YOUR_PATH/venv/bin:/usr/bin:/bin"
+ExecStart=YOUR_PATH/venv/bin/python YOUR_PATH/MLDetector.py
+```
+
+- Execute start-tcpdump.sh in crontab (/tmp/crontab.UOkF0Q/crontab)
+```bash
+@reboot /your-path/start-tcpdump.sh
+```
+-------------------
+
+
 
