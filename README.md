@@ -1,4 +1,5 @@
 # HOW TO SETUP
+## VM and Windows Setup
 Create 4 Virtual Machines (VM) VirtualBox (Attacker, Fail2Ban, Machine Learning, Monitoring):
 - OS Debian 12.7.0
 - Guided - use entire disk
@@ -38,30 +39,25 @@ Windows Network Configuration
 
 
 ----------
-Setup VM Victim Fail2Ban
+## Setup VM Victim Fail2Ban
 ```bash
 sudo apt update && sudo apt upgrade -y
 sudo apt install fail2ban openssh-server git -y
 ```
 
-Setup VM Attacker
+## Setup VM Attacker
 ```bash
 sudo apt update && sudo apt upgrade -y
 sudo apt install hydra openssh-server git -y
 ```
 
-Setup VM Monitoring
+## Setup VM Monitoring
 ```bash
 sudo apt update && sudo apt upgrade -y
 sudo apt install iperf3 tcpdump git -y
 ```
 
-Test attack with Hydra
-```bash
-hydra -l root -P <wordlists.txt> - t <thread> <Target IP Address> ssh
-```
-
-Setup Fail2bBan
+## Setup Fail2bBan
 ```bash
 systemctl start fail2ban
 systemctl status fail2ban
@@ -105,7 +101,7 @@ chat_id = <CHAT_ID>
 Note that you have to fill the bot token and chat id in order to make this script work.
 
 -----------
-Setup VM Machine Learning
+## Setup VM Machine Learning
 ```bash
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y python3 python3-pip tcpdump ufw buildessential python3-dev libpcap-dev git
