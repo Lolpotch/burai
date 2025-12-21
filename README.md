@@ -5,6 +5,12 @@ Create 4 Virtual Machines (VM) VirtualBox (Attacker, Fail2Ban, Machine Learning,
 - All Files in one partition
 - No GUI (only check web server, SSH server, and standard system utilities)
 - Bridged Adapter + Host-only Adapter
+<br><br>
+Our IP Address setup (for the host-only adapter):
+- VM Machine Learning (192.168.67.12)
+- VM Fail2Ban (192.168.67.13)
+- VM Monitoring (192.168.67.14)
+- VM Attacker (192.168.67.67)
 
 /etc/network/interfaces in the VMs
 ```bash
@@ -126,6 +132,11 @@ ExecStart=YOUR_PATH/venv/bin/python YOUR_PATH/MLDetector.py
 @reboot /your-path/start-tcpdump.sh
 ```
 -------------------
-
+# HOW TO ATTACK VM Machine Learning and VM Fail2Ban(in VM Attacker)
+You can try to execute hydra manually and target one of them pre-made victims
+```bash
+hydra -l root -P <wordlists.txt> - t <thread> <Target IP Address> ssh
+```
+Or you can execute one of the script in the "Script ATTACKER" in this repo to attack both of the victim VM simultaneously (you might need to adjust some variables in the script)
 
 
