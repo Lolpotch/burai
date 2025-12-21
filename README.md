@@ -13,7 +13,7 @@ Our IP Address setup (for the host-only adapter):
 - VM Monitoring (192.168.67.14)
 - VM Attacker (192.168.67.67)
 
-/etc/network/interfaces in the VMs
+### /etc/network/interfaces in the VMs
 ```bash
 # This file describes the network interfaces available on your system
 # and how to activate them. For more information, see interfaces (5).
@@ -34,7 +34,7 @@ iface enp0s8 inet static
     address 192.168.67.11/24
 ```
 
-Windows Network Configuration
+### Windows Network Configuration
 <img width="1235" height="741" alt="image" src="https://github.com/user-attachments/assets/66dc6ff3-d5c4-4804-9f25-ffe025645b71" />
 
 
@@ -80,7 +80,8 @@ action   = iptables-multiport[name=sshd, port="ssh", protocol="tcp"]
            telegram[name=sshd]
 ```
 
-Telegram Notification Script: Create the file in /etc/fail2ban/action.d/telegram.conf
+### Telegram Notification Script
+Create the file in /etc/fail2ban/action.d/telegram.conf
 ```bash
 # /etc/fail2ban/action.d/telegram.conf
 [Definition]
@@ -128,7 +129,7 @@ ExecStart=YOUR_PATH/venv/bin/python YOUR_PATH/MLDetector.py
 @reboot /your-path/start-tcpdump.sh
 ```
 -------------------
-# HOW TO ATTACK VM Machine Learning and VM Fail2Ban(in VM Attacker)
+### HOW TO ATTACK VM Machine Learning and VM Fail2Ban(in VM Attacker)
 You can try to execute hydra manually and target one of them pre-made victims
 ```bash
 hydra -l root -P <wordlists.txt> - t <thread> <Target IP Address> ssh
