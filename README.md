@@ -73,7 +73,7 @@ port     = ssh
 filter   = sshd
 logpath  = /var/log/auth.log
 maxretry = 5
-bantime  = 5
+bantime  = 7200
 findtime = 600
 ignoreip = 127.0.0.1 ::1 192.168.67.14 192.168.67.1 
 action   = iptables-multiport[name=sshd, port="ssh", protocol="tcp"]
